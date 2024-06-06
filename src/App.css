@@ -1,0 +1,45 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.darkMode{
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+.whiteMode{
+  background-color: white;
+  color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+.stateManger{
+  padding: 12px 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 1px solid yellow;
+  background-color: rgb(214, 212, 212);
+  position: fixed;
+  top: 12px;
+  right: 12px;
+}
+
+.lightMode{
+  position: fixed;
+  top: 15px;
+  right: 120px;
+}
+
+.dark{
+  font-size: 40px;
+  cursor: pointer;
+}
+.light{
+  font-size: 40px;
+  cursor: pointer;
+}
+
