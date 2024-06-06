@@ -10,11 +10,20 @@ import { Logout } from './Components/LoggedOut/Logout';
 function App() {
 
   const [userLoginState, setUserLoginState] = useState(true);
-  const [btnText, setBtnText] = useState("Logout");
+  let [btnText, setBtnText] = useState("Logout");
   let [isDark, setIsDark] = useState(false);
 
   let handleButtonState = () => {
-    setBtnText("Login");
+    if(btnText === 'Logout'){
+      // setBtnText('Login');
+      //OR
+      setBtnText(btnText='Login');
+    }
+    else{
+      // setBtnText("Logout");
+      //OR
+      setBtnText(btnText='Logout');
+    }
     setUserLoginState(!userLoginState);
   }
 
